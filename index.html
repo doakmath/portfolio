@@ -177,6 +177,22 @@
 							</div>
 						</article>
 
+						<script>
+							function adjustIframeZoom() {
+								var iframe = document.getElementById('resume-iframe');
+								if (window.innerWidth <= 480) {
+									iframe.src = 'images/resume3.pdf#zoom=75';
+								} else if (window.innerWidth <= 768) {
+									iframe.src = 'images/resume3.pdf#zoom=85';
+								} else {
+									iframe.src = 'images/resume3.pdf#zoom=90';
+								}
+							}
+
+							window.addEventListener('resize', adjustIframeZoom);
+							window.addEventListener('load', adjustIframeZoom);
+						</script>
+
 						<style>
 							/* Default styles for larger screens */
 							#resume-iframe {
