@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Mathew Doak's Portfolio</title>
+		<title>Matthew Doak's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,8 +24,8 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Mathew Doak</h1>
-								<p>A fullstack software developer</p>
+								<h1>Matthew Doak</h1>
+								<p>A Full Stack Software Developer</p>
 							</div>
 						</div>
 						<nav>
@@ -69,74 +69,49 @@
 								This understanding of human behavior and cognition plays a pivotal role
 								in my approach to software development, particularly in creating user-centric
 								applications</p>
-
-								<p>My technical journey continued at Hack Reactor, where I honed my fullstack
-									development skills. I gained proficiency in frameworks such as React and Django
-									and languages like Python, JavaScript, and SQL. My training included learning
-									about various software architectures, including monolithic and microservice designs.
-									This combination of psychological insight and technical expertise allows me to develop
-									software that is not only robust and efficient but also intuitive and user-friendly.</p>
-
-								<p>I am deeply passionate about connecting people with information,
-									other people, and resources. My aspiration is to empower individuals
-									to become the best versions of themselves through technology.
-									I believe in the transformative power of software to improve lives,
-									and I am committed to developing solutions that make a meaningful
-									impact.</p>
-
-								<p>Currently, I am working on several projects focused on health and
-									wellness. These projects aim to leverage technology to promote
-									 better living and well-being. Whether it's through innovative
-									  AI applications, engaging frontend UI/UX designs,
-									  or strong backend logic, my goal is to create tools that
-									  help people lead healthier, more fulfilling lives.</p>
-
-								<p>Beyond my professional pursuits, I have a deep love for music,
-									 nature, and animals. These interests shape my worldview and
-									 inspire my work. I believe that a harmonious relationship with
-									 the planet and all its inhabitants is crucial for our collective
-									 well-being. I am committed to making the world a better place,
-									 one line of code at a time.</p>
-
-								<p>I thrive in environments that foster collaboration and communication.
-									 Whether working in small teams or independently, I bring strong
-									 communication skills and a passion for learning. I enjoy the
-									 dynamic nature of software development and am always eager to
-									 embrace new challenges and technologies.</p>
-
-								<p>In summary, my journey through psychology and programming has
-									equipped me with a unique blend of skills and perspectives.
-									I am dedicated to using these abilities to connect, empower,
-									and uplift others through innovative software solutions.
-									Thank you for taking the time to get to know me.</p>
-
 						</article>
 
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/working-photo.jpg" alt="" /></span>
+
+								<div class="project">
+									<h3 class="project-title">Wellness Whale</h3>
+									<div class="project-details" style="display: none;">
+										<p>A web-based application that's designed to track your wellbeing through tracking water intake,
+											meditation, moods, and journal entries, all in one convenient progress page.</p>
+										<span class="image main">
+											<img src="images/wellness-whale.png" alt="wellness-whale" />
+										</span>
+									</div>
+								</div>
+
 								<h3>Wellness Whale</h3>
 								<p>A web-based application that's designed to track your wellbeing through tracking water intake,
 									meditation, moods, and journal entries, all in one convenient progress page.
 								</p>
 								<span class="image main"><img src="images/wellness-whale.png" alt="wellness-whale" /></span>
+
 								<h3>Stock Tracker</h3>
 								<p>An app designed to help people track and analyze stocks through various graphic visuals.</p>
 								<span class="image main"><img src="images/stock-tracker.png" alt="stock-tracker" /></span>
+
 								<h3>Wesley's Favorite Doggie Game</h3>
 								<p>A fun game for dog lovers to distinguish their favorite dog.</p>
 								<span class="image main"><img src="images/wesleys-favorite-doggie-game.png" alt="wesleys favorite doggie game" /></span>
+
 								<h3>Moment of Zen</h3>
 								<p>An app that takes a random picture and the Quote of the Day, or random quotes thereafter,
 									and combines them for a thoughtful moment.
 								</p>
 								<span class="image main"><img src="images/moment-of-zen.png" alt="moment of zen" /></span>
+
 								<h3>Car Dealership</h3>
 								<p>An app that allows for the full functioning and tracking of sales personnel and clients, services and
 									service history, and inventory for a car dealership.
 								</p>
 								<span class="image main"><img src="images/car-dealership.png" alt="car-dealership" /></span>
+
 								<h3>Shoes and Hats</h3>
 								<p>An app that allows for the tracking and maintenance of a warehouse size volume of shoes and,
 									you guessed it, hats.
@@ -422,7 +397,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<!-- Footer -->
 					<footer id="footer">
 						<!-- <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p> -->
-						 <p class="copyright">&copy; Mathew Doak 2024</p>
+						 <p class="copyright">&copy; Matthew Doak 2024</p>
 						 <a href="https://gitlab.com/doakmath" class="icon brands fa-gitlab"><span class="label">GitLab</span>GitLab</a>
 						 <a href="https://github.com/doakmath" class="icon brands fa-github"><span class="label">GitHub</span>GitHub</a>
 					</footer>
@@ -438,6 +413,33 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+		</div> <!-- BG -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const projectTitles = document.querySelectorAll(".project-title");
+
+				projectTitles.forEach((title) => {
+					title.addEventListener("click", () => {
+						const details = title.nextElementSibling;
+
+						if (details.style.display === "none" || details.style.display === "") {
+							details.style.display = "block";
+						} else {
+							details.style.display = "none";
+						}
+					});
+				});
+			});
+		</script>
+
+
 
 	</body>
 </html>
