@@ -564,20 +564,30 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<script>
 			document.addEventListener("DOMContentLoaded", () => {
-				const projectTitles = document.querySelectorAll(".project-title");
+			const projectTitles = document.querySelectorAll(".project-title");
 
-				projectTitles.forEach((title) => {
-					title.addEventListener("click", () => {
-						const details = title.nextElementSibling;
+			projectTitles.forEach((title) => {
+				title.addEventListener("click", () => {
+					const details = title.nextElementSibling;
 
-						if (details.style.display === "none" || details.style.display === "") {
-							details.style.display = "block";
-						} else {
-							details.style.display = "none";
-						}
+					// Toggle visibility when the title is clicked
+					if (details.style.display === "none" || details.style.display === "") {
+						details.style.display = "block";
+					} else {
+						details.style.display = "none";
+					}
+
+					// Add a click listener to the details to collapse when clicked
+					details.addEventListener("click", (event) => {
+						details.style.display = "none";
+
+						// Stop the event from bubbling up to the title's click listener
+						event.stopPropagation();
 					});
 				});
 			});
+		});
+
 		</script>
 
 
