@@ -33,8 +33,6 @@
 								<!-- <li><a href="#intro">Intro</a></li> -->
 								<li><a href="#about">About</a></li>
 								<li><a href="#work">Projects</a></li>
-								<li><a href="#skills">Skills</a></li>
-								<li><a href="#resume">Resume</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -146,90 +144,6 @@
 								<span class="image main"><img src="images/shoes-and-hats.png" alt="shoes and hats" /></span>
 							</article>
 
-						<!-- Skills -->
-						<article id="skills">
-							<h2 class="major">Skills</h2>
-							<span class="image main"><img src="images/skills-pic.jpg" alt="resume" /></span>
-							<div class="centered-list">
-								<h3>Technical Skills</h3>
-								<ul>
-									<li>Python</li>
-									<li>Javascript</li>
-									<li>HTML5</li>
-									<li>CSS</li>
-									<li>SQL</li>
-									<li>React</li>
-									<li>Redux</li>
-									<li>Django</li>
-									<li>Docker</li>
-									<li>Insomnia</li>
-									<li>Auth0</li>
-									<li>FastAPI</li>
-									<li>RESTful</li>
-								</ul>
-								<div class="centered-list">
-								<h3>Soft Skills</h3>
-								<ul>
-									<li>Communication</li>
-									<li>Creativity</li>
-									<li>Active Listening</li>
-									<li>Problem-solving</li>
-									<li>Reasoning</li>
-									<li>Open-mindedness</li>
-									<li>Integrity</li>
-									<li>Authenticity</li>
-									<li>Teamwork</li>
-									<li>Compassion</li>
-									<li>Work Ethic</li>
-								</ul>
-								</div>
-							</div>
-						</article>
-
-						<!-- Resume -->
-						<article id="resume">
-							<h2 class="major">Resume</h2>
-							<div class="centered-list">
-								<iframe id="resume-iframe" src="images/resume3.pdf#zoom=90" style="border: 1px solid #ccc; width: 100%; height: 100vh;" scrolling="yes"></iframe>
-							</div>
-						</article>
-
-						<script>
-							function adjustIframeZoom() {
-								var iframe = document.getElementById('resume-iframe');
-								if (window.innerWidth <= 480) {
-									iframe.src = 'images/resume3.pdf#zoom=75';
-								} else if (window.innerWidth <= 768) {
-									iframe.src = 'images/resume3.pdf#zoom=85';
-								} else {
-									iframe.src = 'images/resume3.pdf#zoom=90';
-								}
-							}
-
-							window.addEventListener('resize', adjustIframeZoom);
-							window.addEventListener('load', adjustIframeZoom);
-						</script>
-
-						<style>
-							/* Default styles for larger screens */
-							#resume-iframe {
-								width: 100%;
-								height: 100vh;
-							}
-
-							/* Styles for smaller screens */
-							@media (max-width: 768px) {
-								#resume-iframe {
-									height: 80vh; /* Adjust the height as needed for smaller screens */
-								}
-							}
-
-							@media (max-width: 480px) {
-								#resume-iframe {
-									height: 70vh; /* Adjust the height as needed for very small screens */
-								}
-							}
-						</style>
 
 						<!-- Contact -->
 							<article id="contact">
@@ -255,7 +169,7 @@
 									</ul>
 								</form>
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/mathew-doak-365604289" class="icon brands fa-linkedin"><span class="label">LinkedIn</span>Or connect with me on LinkedIn</a></li>
+									<li><a href="https://www.linkedin.com/in/mathew-doak-365604289" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<!-- <li><a href="https://gitlab.com/doakmath" class="icon brands fa-gitlab"><span class="label">GitLab</span></a></li> -->
 									<!-- <li><a href="https://github.com/doakmath" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
 								</ul>
